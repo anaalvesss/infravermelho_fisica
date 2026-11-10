@@ -62,7 +62,7 @@ nav ul li a:hover {
         rgba(80, 0, 0, 0.75),
         rgba(80, 0, 0, 0.75)
     ),
-    url("https://images.unsplash.com/photo-1518837695005-2083093ee35b");
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO1pSG11g4i-XTubax98gcVkR4onsWdMl_gob-1Scjx_8uUTYL9lSKsdU&s=10");
 
     background-size: cover;
     background-position: center;
@@ -92,7 +92,6 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
-/* BOTÃO */
 
 .botao {
     display: inline-block;
@@ -110,15 +109,12 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/* CONTAINER */
-
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 40px auto;
 }
 
-/* INTRODUÇÃO */
 
 .introducao {
     background-color: white;
@@ -139,7 +135,6 @@ nav ul li a:hover {
     margin-bottom: 15px;
 }
 
-/* SEÇÃO DE CONTEÚDOS */
 
 .conteudos {
     background-color: #eeeeee;
@@ -159,7 +154,6 @@ nav ul li a:hover {
     margin: 0 auto 30px;
 }
 
-/* CARDS */
 
 .cards {
     display: grid;
@@ -205,7 +199,6 @@ nav ul li a:hover {
     border-color: #660000;
 }
 
-/* IMPORTÂNCIA */
 
 .importancia {
     background-color: white;
@@ -225,8 +218,6 @@ nav ul li a:hover {
     margin-bottom: 15px;
 }
 
-/* CURIOSIDADE */
-
 .curiosidade {
     background-color: #b30000;
     color: white;
@@ -245,8 +236,6 @@ nav ul li a:hover {
     text-align: justify;
 }
 
-/* RODAPÉ */
-
 footer {
     background-color: #700000;
     color: white;
@@ -258,7 +247,6 @@ footer p {
     margin: 5px;
 }
 
-/* RESPONSIVIDADE */
 
 @media (max-width: 768px) {
 

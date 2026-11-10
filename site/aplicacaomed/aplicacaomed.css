@@ -7,74 +7,69 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    color: #333;
+    background-color: #f4f4f4;
+    color: #222;
     line-height: 1.6;
 }
 
-/* CABEÇALHO */
 
 header {
-    background: #b30000;
+    background-color: #b30000;
     color: white;
+    padding: 25px;
     text-align: center;
-    padding: 25px 15px;
 }
 
 header h1 {
+    font-size: 35px;
     margin-bottom: 15px;
-    font-size: 32px;
 }
 
-/* MENU */
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
 }
 
-nav a {
+nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-    border-radius: 5px;
+    font-weight: bold;
     transition: 0.3s;
 }
 
-nav a:hover {
-    background: white;
-    color: #b30000;
+nav ul li a:hover {
+    color: #ffcccc;
 }
 
-/* CONTEÚDO */
 
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 30px auto;
+    margin: 40px auto;
 }
 
-.introducao,
-.conclusao {
-    background: white;
+.introducao {
+    background-color: white;
     padding: 25px;
     border-radius: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.introducao h2,
-.conclusao h2 {
+.introducao h2 {
     color: #b30000;
     margin-bottom: 15px;
     text-align: center;
 }
 
-/* CARDS */
+.introducao p {
+    text-align: justify;
+}
+
 
 .conteudo {
     display: grid;
@@ -83,12 +78,12 @@ nav a:hover {
 }
 
 .card {
-    background: white;
+    background-color: white;
     padding: 25px;
     border-radius: 10px;
     border-top: 5px solid #b30000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
+    transition: transform 0.3s;
 }
 
 .card:hover {
@@ -98,11 +93,12 @@ nav a:hover {
 .card h2 {
     color: #b30000;
     margin-bottom: 15px;
+    font-size: 22px;
 }
 
 .card p {
-    margin-bottom: 12px;
     text-align: justify;
+    margin-bottom: 12px;
 }
 
 .card img {
@@ -113,45 +109,58 @@ nav a:hover {
     border-radius: 8px;
 }
 
-/* ESPORTE */
 
 .esporte {
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 .esporte img {
     max-height: 400px;
 }
 
-/* RODAPÉ */
+
+
+.conclusao {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 35px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.conclusao h2 {
+    text-align: center;
+    color: #b30000;
+    margin-bottom: 15px;
+}
+
+.conclusao p {
+    text-align: justify;
+}
+
 
 footer {
-    background: #b30000;
+    background-color: #b30000;
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
 }
 
-/* RESPONSIVIDADE */
 
 @media (max-width: 768px) {
+
     .conteudo {
         grid-template-columns: 1fr;
     }
 
+    header h1 {
+        font-size: 28px;
+    }
+
     nav ul {
         flex-direction: column;
-        align-items: center;
+        gap: 10px;
     }
-
-    header h1 {
-        font-size: 26px;
-    }
-
-    .container {
-        width: 95%;
-    }
-}
 
 }
