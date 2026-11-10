@@ -1,0 +1,193 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #b30000;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcccc;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.introducao {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.introducao h2 {
+    color: #b30000;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.introducao p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+
+.titulo-secao {
+    text-align: center;
+    color: #b30000;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border-top: 5px solid #b30000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #b30000;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    text-align: justify;
+    margin-bottom: 12px;
+}
+
+.card ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.card li {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+
+.espectro {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 5px solid #b30000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.espectro h2 {
+    color: #b30000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.espectro p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+
+
+.conclusao {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.conclusao h2 {
+    color: #b30000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.conclusao p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+
+footer {
+    background-color: #b30000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .introducao,
+    .espectro,
+    .conclusao {
+        padding: 20px;
+    }
+
+}
